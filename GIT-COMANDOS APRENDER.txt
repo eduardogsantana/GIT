@@ -1,0 +1,59 @@
+                                           SOBRE O GIT
+
+
+Arquivos do git podem esgtar em 3 estados:
+- Commited: dado guardado com segurança em seu repositório local.          3° na ordem de execução
+- Modified: você mudou seu arquivo, mas não o enviou para seu repositório. 1° na ordem de execução
+- Staged: você marcou um arquivo modificado para que vá no próximo commit. 2° na ordem de execução
+
+"~" é o diretório padrão do usário.
+
+"git add nomeArquivo"
+- git status dirá que há um novo arquivo chamado "nomeArquivo".
+- Se você modificar o arquivo de novo, deve fazer um novo "git add"
+
+"criar branchs serve para que o caminho principal se mantenha intacto"
+
+
+Ignorando arquivos
+- O padrão dos arquivos a ignorar devem ser colocados em um arquivo chamado ".gitignore"
+ Ex: $cat .gitignore
+
+
+COMANDOS GIT
+
+ls: Listar conteúdo do diretório
+ls -a: Para apresentar arquivos ocultos.
+cd "nome do diretório": Entrar em um diretório
+mkdir "nome da pasta": Criar um diretório
+clear: Limpar a tela
+touch: Cria um arquivo novo vazio
+rm -rf .git: remover repositório do git
+
+###TROCA A BRANCH PARA MAIN##
+>>> git config --global init.defaultBranch main
+
+git log: ver todas as alterações, com altor e horário.
+git log --oneline: todos commits de forma resumida e simples.
+git pull: Você atualiza tudo que foi mexido no seu arquivo.
+git restore --source: Volta para um determinado momento da aplicação.
+
+#Se você deseja verificar o histórico de alterações, as mensagens de commits, o nome do autor daquele commit e outras informações sobre o projeto, existe um comando do git que pode te ajudar. Este comando é o git log.#
+
+cd .. : Volta para o diretório anterior
+git log: Quantos commits deu no arquivo atual.
+git status --ignored: Para conferir quais arquivos estão sendo ignorados.
+
+Quando o arquivo foi commitado uma vez, ele não será mais ignorado pelo gitignore.
+
+Sempre que acontecer conflito no merge, logo após o conflito dar um git add e depois o git commit
+
+git restore --staged (nome do arquivo): Retira o arquivo do stage
+git branch nomeBranch: cria uma branch nova
+git checkout nomeBranch: para navegar entre as branchs
+git checkout main: para ir a branch main
+git switch: para alternar entre branchs
+ cp teste22.txt 22/teste22.txt : copiar arquivos 
+mv aprendendo.txt SENHAS/ : mover arquivos
+
+
